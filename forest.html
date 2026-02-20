@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forest Trail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg bg-forest">
+    <div class="panel">
+        <h1>Forest Trail</h1>
+
+        <p>The trail splits into two routes.</p>
+        <p>One is faster but dangerous. The other is slower but safer.</p>
+
+        <audio id="bgm" autoplay loop>
+            <source src="media/wind.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="buttons">
+            <a href="ridge.html" class="btn">Take the steep shortcut</a>
+            <a href="cave.html" class="btn">Take the longer safe path</a>
+        </div>
+    </div>
+
+    <script>
+        const bgm = document.getElementById("bgm");
+        bgm.volume = 0.5;
+        bgm.play().catch(() => {});
+    </script>
+</body>
+</html>

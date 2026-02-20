@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basecamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg bg-basecamp">
+    <div class="panel">
+        <h1>Basecamp</h1>
+
+        <p>You stand at the last safe point before the mountain becomes unforgiving.</p>
+        <p>The air is thin. The temperature is dropping.</p>
+        <p>You can only carry ONE extra item.</p>
+
+        <audio id="bgm" autoplay loop>
+            <source src="media/wind.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="buttons">
+            <a href="forest.html" class="btn">Take extra oxygen tank</a>
+            <a href="lose_cold.html" class="btn">Take lighter jacket</a>
+        </div>
+    </div>
+
+    <script>
+        const bgm = document.getElementById("bgm");
+        bgm.volume = 0.5;
+        bgm.play().catch(() => {});
+    </script>
+</body>
+</html>

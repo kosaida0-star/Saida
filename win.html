@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>You Win</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg bg-win">
+    <div class="panel">
+        <h1>YOU SURVIVED</h1>
+
+        <p>The summit is behind you. The hardest part was staying calm.</p>
+        <p>You proved you can make the right choices under pressure.</p>
+
+        <audio id="bgm" autoplay loop>
+            <source src="media/wind.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="buttons">
+            <a href="index.html" class="btn">Play Again</a>
+        </div>
+    </div>
+
+    <script>
+        const bgm = document.getElementById("bgm");
+        bgm.volume = 0.5;
+        bgm.play().catch(() => {});
+    </script>
+</body>
+</html>

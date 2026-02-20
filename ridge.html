@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Icy Ridge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg bg-ridge">
+    <div class="panel">
+        <h1>Icy Ridge</h1>
+
+        <p>The wind becomes violent. Snow begins falling heavily.</p>
+        <p>Your boots slide on the ice. One mistake is fatal.</p>
+
+        <audio id="bgm" autoplay loop>
+            <source src="media/wind.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="buttons">
+            <a href="lose_fall.html" class="btn">Keep moving fast</a>
+            <a href="summit.html" class="btn">Slow down and secure ropes</a>
+        </div>
+    </div>
+
+    <script>
+        const bgm = document.getElementById("bgm");
+        bgm.volume = 0.5;
+        bgm.play().catch(() => {});
+    </script>
+</body>
+</html>

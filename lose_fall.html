@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Over</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg bg-fall">
+    <div class="panel">
+        <p>For one second, everything feels weightless.</p>
+        <p>Then the cold air disappears and the world goes silent.</p>
+
+        <!-- Death sound -->
+        <audio id="death" autoplay>
+            <source src="media/falling_man.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="bgm" autoplay loop>
+            <source src="media/wind.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="buttons">
+            <a href="index.html" class="btn">Try Again</a>
+        </div>
+    </div>
+
+    <script>
+        const bgm = document.getElementById("bgm");
+        const death = document.getElementById("death");
+        if (bg

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Summit or Silence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg bg-index">
+    <div class="panel">
+        <h1>SUMMIT OR SILENCE</h1>
+
+        <p>You stand at the base of the deadliest mountain in the region.</p>
+        <p>Weather is unstable. Oxygen is limited. One wrong move means death.</p>
+
+        <!-- Background music (autoplay attempt) -->
+        <audio id="bgm" autoplay loop>
+            <source src="media/wind.mp3" type="audio/mpeg">
+        </audio>
+
+        <p class="small-note">
+            If you hear no sound, your browser may block autoplay. Allow sound for this site once.
+        </p>
+
+        <div class="buttons">
+            <a href="basecamp.html" class="btn">Begin the climb</a>
+        </div>
+    </div>
+
+    <script>
+        // Try to force autoplay. Browsers may still block it.
+        const bgm = document.getElementById("bgm");
+        bgm.volume = 0.5;
+        bgm.play().catch(() => {});
+    </script>
+</body>
+</html>

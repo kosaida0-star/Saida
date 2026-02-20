@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Final Ascent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg bg-summit">
+    <div class="panel">
+        <h1>Final Ascent</h1>
+
+        <p>You are close to the summit. The air is thin and your vision blurs.</p>
+        <p>Your oxygen level is dropping fast.</p>
+
+        <audio id="bgm" autoplay loop>
+            <source src="media/wind.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="buttons">
+            <a href="lose_cold.html" class="btn">Push without oxygen</a>
+            <a href="win.html" class="btn">Use oxygen tank wisely</a>
+        </div>
+    </div>
+
+    <script>
+        const bgm = document.getElementById("bgm");
+        bgm.volume = 0.5;
+        bgm.play().catch(() => {});
+    </script>
+</body>
+</html>

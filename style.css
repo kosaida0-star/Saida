@@ -1,0 +1,80 @@
+/* ===== Global reset ===== */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* ===== Background pages ===== */
+.bg {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 16px;
+}
+
+/* Each page background image */
+.bg-index { background-image: url("media/mountain.png"); }
+.bg-basecamp { background-image: url("media/basecamp.png"); }
+.bg-forest { background-image: url("media/forest.png"); }
+.bg-ridge { background-image: url("media/ridge.png"); }
+.bg-cave { background-image: url("media/cave.png"); }
+.bg-summit { background-image: url("media/summit.png"); }
+.bg-win { background-image: url("media/summit.png"); }
+
+/* Death backgrounds (your images already contain the “You Lose” text) */
+.bg-cold { background-image: url("media/lose_cold.png"); }
+.bg-fall { background-image: url("media/lose_fall.png"); }
+.bg-avalanche { background-image: url("media/lose_avalanche.png"); }
+
+/* ===== Content overlay (glass panel) ===== */
+.panel {
+    width: min(900px, 100%);
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 16px;
+    padding: 28px 22px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+
+    /* ===== Buttons ===== */
+.buttons {
+    margin-top: 22px;
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+
+    /* White transparent button */
+    background: rgba(255, 255, 255, 0.75);
+    color: #000;
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.95);
+    transform: scale(1.03);
+}
+
+}
+
+h
