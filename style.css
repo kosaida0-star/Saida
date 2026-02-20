@@ -24,18 +24,18 @@ html, body {
 }
 
 /* Each page background image */
-.bg-index { background-image: url("media/mountain.png"); }
-.bg-basecamp { background-image: url("media/basecamp.png"); }
-.bg-forest { background-image: url("media/forest.png"); }
-.bg-ridge { background-image: url("media/ridge.png"); }
-.bg-cave { background-image: url("media/cave.png"); }
-.bg-summit { background-image: url("media/summit.png"); }
-.bg-win { background-image: url("media/summit.png"); }
+.bg-index { background-image: url("mountain.png"); }
+.bg-basecamp { background-image: url("basecamp.png"); }
+.bg-forest { background-image: url("forest.png"); }
+.bg-ridge { background-image: url("ridge.png"); }
+.bg-cave { background-image: url("cave.png"); }
+.bg-summit { background-image: url("summit.png"); }
+.bg-win { background-image: url("summit.png"); }
 
 /* Death backgrounds (your images already contain the “You Lose” text) */
-.bg-cold { background-image: url("media/lose_cold.png"); }
-.bg-fall { background-image: url("media/lose_fall.png"); }
-.bg-avalanche { background-image: url("media/lose_avalanche.png"); }
+.bg-cold { background-image: url("lose_cold.png"); }
+.bg-fall { background-image: url("lose_fall.png"); }
+.bg-avalanche { background-image: url("lose_avalanche.png"); }
 
 /* ===== Content overlay (glass panel) ===== */
 .panel {
@@ -75,6 +75,3 @@ html, body {
     transform: scale(1.03);
 }
 
-}
-
-h
